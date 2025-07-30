@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+
+}
+.watch{
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    border-radius: 50%;
+    box-shadow: 0 2px 0 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 10px;
+    text-align: center;
+}
+.watch span b{
+    transform: rotate(calc(-30deg *var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+.watch::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+}
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hand i{
+    position: absolute;
+    background-color: var(--clr);
+    /* background-color: brown; */
+    width: 4px;
+    height: var(--h);
+    border-radius: 8px;
+
+}
