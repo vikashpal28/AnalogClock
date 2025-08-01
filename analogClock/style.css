@@ -8,6 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background: linear-gradient(90deg,black 30%,#333 70%);
 }
 .container{
     position: relative;
